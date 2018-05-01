@@ -23,7 +23,7 @@ This project performs character recognition using deep learning concepts. It can
 Here we use balanced data sets to train model.
 Although downloaded data set also contains small alphabets letters. I provided here preprocess_data.py to remove all small alphabet latter from original data sets.
 If you visualize original images in given data sets you see images are flipped or rotated.
-So in order to get normal image each image must be flipped vertically and then rotated 90 degree anti-clock-wise. I have provided code to flip and rotate image in [preprocess_data.py](https://github.com/Devbishnoi29/Character-Recognition-Using-Tensorflow-Digits-Upper-Case-Letter-/blob/master/preprocess_data.py). After processing file, train file contains 86400 number of images and test file contains 14400 number of image.
+So in order to get normal image each image must be flipped vertically and then rotated 90 degree anti-clock-wise. I have provided code to flip and rotate image in [preprocess_data.py](https://github.com/Devbishnoi29/Digits-and-Capital-Alphabet-Recognition-using-Tensorflow/blob/master/preprocess_data.py). After processing file, train file contains 86400 number of images and test file contains 14400 number of image.
 # The Model
 	It uses csv python module to open given csv file into appropriate csv module. Here we use 5 layers.
 		1. Convolutional layer 
@@ -49,18 +49,18 @@ So in order to get normal image each image must be flipped vertically and then r
 			Output : 2d tenser, dim:[N, Number of classes]
 
 # How to run
-1. To prepare data sets run appropriate method from preprocess_data.py. Discription to each method being used has given as comments in [preprocess_data.py](https://github.com/Devbishnoi29/Character-Recognition-Using-Tensorflow-Digits-Upper-Case-Letter-/blob/master/preprocess_data.py) file. Once you prepared your data sets, you are all set to train.
-2. Run [train_model.py](https://github.com/Devbishnoi29/Character-Recognition-Using-Tensorflow-Digits-Upper-Case-Letter-/blob/master/train_model.py) as many times as you want, As everything is being stored in "store/..." directory to you don't worry about consistancy of training process. It will ask you about number of epochs for training model. Although Training process may be interruped by [early stopping strategy](https://en.wikipedia.org/wiki/Early_stopping).
-3. Although we perform testing along with training, But if you want to test model seperately then run [evaluation.py](https://github.com/Devbishnoi29/Character-Recognition-Using-Tensorflow-Digits-Upper-Case-Letter-/blob/master/evaluation.py) to evaluate model on testing data.
+1. To prepare data sets run appropriate method from preprocess_data.py. Discription to each method being used has given as comments in [preprocess_data.py](https://github.com/Devbishnoi29/Digits-and-Capital-Alphabet-Recognition-using-Tensorflow/blob/master/preprocess_data.py) file. Once you prepared your data sets, you are all set to train.
+2. Run [train_model.py](https://github.com/Devbishnoi29/Digits-and-Capital-Alphabet-Recognition-using-Tensorflow/blob/master/train_model.py) as many times as you want, As everything is being stored in "store/..." directory to you don't worry about consistancy of training process. It will ask you about number of epochs for training model. Although Training process may be interruped by [early stopping strategy](https://en.wikipedia.org/wiki/Early_stopping).
+3. Although we perform testing along with training, But if you want to test model seperately then run [evaluation.py](https://github.com/Devbishnoi29/https://github.com/Devbishnoi29/Digits-and-Capital-Alphabet-Recognition-using-Tensorflow/blob/master/evaluation.py) to evaluate model on testing data.
 
 # Model graph
-![graph goes here](https://github.com/Devbishnoi29/Character-Recognition-Using-Tensorflow-Digits-Upper-Case-Letter-/blob/master/images/graph.png)
+![graph goes here](https://github.com/Devbishnoi29/Digits-and-Capital-Alphabet-Recognition-using-Tensorflow/blob/master/images/graph.png)
 
 # Plot of Cost while training
-![cost plot](https://github.com/Devbishnoi29/Character-Recognition-Using-Tensorflow-Digits-Upper-Case-Letter-/blob/master/images/cost.png)
+![cost plot](https://github.com/Devbishnoi29/Digits-and-Capital-Alphabet-Recognition-using-Tensorflow/blob/master/images/cost.png)
 
 # Plot of Training Accuracy while training
-![Train accuracy](https://github.com/Devbishnoi29/Character-Recognition-Using-Tensorflow-Digits-Upper-Case-Letter-/blob/master/images/accuracy.png)
+![Train accuracy](https://github.com/Devbishnoi29/Digits-and-Capital-Alphabet-Recognition-using-Tensorflow/blob/master/images/accuracy.png)
 
 # Efficiency
 This such a small model gains 81% accuracy on testing data sets. Although this may differ with your testing accuracy because of random initialization of biases and weights. Because of computational power limitations we are limited to such small convolutional neural network. But testing accuracy may increase when we increase number of parameters (biases and weights).
